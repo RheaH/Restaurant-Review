@@ -15,7 +15,7 @@ class DBHelper {
      */
     static get DATABASE_URL() {
         const port = 8000 // Change this to your server port
-        return `https://github.com/RheaH/Restaurant-Review`;
+        return `https://github.com/RheaH/Restaurant-Review/data/restaurants.json`;
     }
 
     /**
