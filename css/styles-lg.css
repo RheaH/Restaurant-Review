@@ -1,0 +1,22 @@
+#restaurants-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#restaurants-list li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+#reviews-list li {
+    grid-template-columns: auto 15% 75%;
+    grid-template-areas:
+        'rn rd rr'
+        'rc rc rc';
+    grid-template-rows: 60px auto;
+}
+
+#reviews-list .review-rating {
+    grid-area: rr;
+    align-self: center;
+}

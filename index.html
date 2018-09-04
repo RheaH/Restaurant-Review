@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color">
+    <meta content="A review app for restaurant" name="description">
+    <meta content="Pascal Meers" name="author">
+    <link rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-md.css" media="(min-width: 768px)"  rel="stylesheet">
+    <link href="css/styles-lg.css" media="(min-width: 1024px)"  rel="stylesheet">
+    <link href="css/styles-xl.css" media="(min-width: 1366px)"  rel="stylesheet">
+
+    <title>Restaurant Reviews</title>
+</head>
+
+<body>
+    <header aria-label="Page Top Header">
+        <nav aria-label="Navigation">
+            <h1><a href="/">Restaurant Reviews</a>
+            </h1>
+        </nav>
+    </header>
+
+
+    <main aria-label="Page Main Content" id="maincontent">
+        <section id="map-container">
+            <div id="map" title="Google Maps" role="application">
+            </div>
+        </section>
+
+
+        <section id="review-container">
+            <div class="filter-options">
+                <h2>Filter Results</h2>
+                <select aria-label="All Neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                    <option value="all">
+                        All Neighborhoods
+                    </option>
+                </select> <select aria-label="All Cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                    <option value="all">
+                        All Cuisines
+                    </option>
+                </select>
+            </div>
+
+
+            <ul id="restaurants-list">
+            </ul>
+        </section>
+    </main>
+
+
+    <footer aria-label="Page Footer" id="footer">
+        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+    <script src="js/dbhelper.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQsYacINxBB7smkKLQJJXux8JBz4nxsA&libraries=places&callback=initMap">
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+#maincontent {
+    grid-template-rows: 500px auto;
+}
+
+#map {
+    height: 500px;
+}
+
+.filter-options {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25px 50px;
+}
+
+.filter-options h2 {
+    grid-column: span 2;
+}
+
+#restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+/* ====================== Restaurant Details ====================== */
+
+.inside #map {
+    height: 500px;
+}
+
+#restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'n n'
+        'i a'
+        'i t'
+        'c c';
+}
+
+#restaurant-container #restaurant-name {
+    grid-area: n;
+}
+
+#restaurant-container #restaurant-img {
+    grid-area: i;
+}
+
+#restaurant-container #restaurant-address {
+    grid-area: a;
+    justify-self: center;
+}
+
+#restaurant-container #restaurant-hours {
+    grid-area: t;
+}
+
+#restaurant-container #restaurant-cuisine {
+    grid-area: c;
+    height: 30px;
+    margin: 1em 0 1em 0;
+}
+
+#reviews-list {
+    padding: 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+#reviews-list li {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        'rn rc'
+        'rd rc'
+        'rr rc';
+    grid-template-rows: 60px 0 auto;
+}
+
+#reviews-list .review-name {
+    grid-area: rn;
+}
+
+#reviews-list .review-date {
+    grid-area: rd;
+    align-self: center;
+}
+
+#reviews-list .review-rating {
+    grid-area: rr;
+    align-self: start;
+}
+
+#reviews-list .review-comment {
+    grid-area: rc;
+}
