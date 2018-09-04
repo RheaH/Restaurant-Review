@@ -6,10 +6,10 @@ This project is part of the Udacity Google front-end developer NanoDegree Schola
 # Installation
 
 clone or download the project
-`git clone https://github.com/Calexxxxx/restaurant-review.git`
+`git clone https://github.com/RheaH/Restaurant-Review.git`
 
 cd into the root folder
-`cd restaurant-review`
+`cd Restaurant-Review`
 
 open the project in your editor and navigate to `js/dbhelper.js` on `line18`
 change the location to `http://localhost:${port}` leave the `/data/restaurants.json` as is.
@@ -27,6 +27,3 @@ after starting the server you can visit the project at
 `localhost:8000`
 
 
-# Live version
-
-[View Project live](https://calexxxxx.github.io/restaurant-review)
