@@ -30,7 +30,7 @@ class DBHelper {
         const port = 8000 // Change this to your server port
         /***** Switch comments in code to run page on local servel OR on github *****/
         // return `http://localhost:${port}/data/restaurants.json`;
-        return `https://RheaH.github.io/Restaurant-Review/data/restaurants.json`;
+        return `https://github.com/RheaH/Restaurant-Review/blob/master/data/restaurants.json`;
     }
 
     /**
