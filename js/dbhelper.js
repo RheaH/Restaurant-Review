@@ -9,9 +9,9 @@ class DBHelper {
         //Register service worker after DOM content has loaded
         window.addEventListener('load', function() {
             /***** Switch comments in code to run page on local servel OR on github *****/
-            // navigator.serviceWorker.register('/sw.js', {
+            // navigator.serviceWorker.register('/service-worker.js', {
             //     scope: '/'
-            navigator.serviceWorker.register('/Restaurant-Review/sw.js', {
+            navigator.serviceWorker.register('/Restaurant-Review/service-worker.js', {
                 scope: '/Restaurant-Review/'
             }).then(function(reg) {
                 console.log("Service Worker Registered with scope: ", reg.scope);
