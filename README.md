@@ -1,4 +1,4 @@
-# Restaurant review app
+# Restaurant Review App
 
 
 This project is part of the Udacity Google front-end developer NanoDegree Scholarschip. The goal is to rebuild the given project an make it mobile friendly, add in a serviceworker for offline rendering and make it a11y ready.
@@ -24,5 +24,11 @@ Stop the server
 
 After starting the server you can visit the project at
 `localhost:8000`
+
+Resources
+
+Restaurant Reviews App Walkthrough Part 1 – Map API. (2018, August 21). Retrieved from https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/
+
+Udacity. (n.d.). Retrieved from https://github.com/udacity
 
 
