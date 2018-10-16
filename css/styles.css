@@ -46,10 +46,7 @@ a:focus {
   align-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: 15% auto 10%;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
+  grid-template-areas:header, main, footer;
 }
 
 
