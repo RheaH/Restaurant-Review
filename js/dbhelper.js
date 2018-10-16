@@ -2,25 +2,7 @@
  * Common database helper functions.
  */
 class DBHelper {
-    // Create new class to register service worker
-    static registerServiceWorker() {
-        //check if browser supports service workers, if not return.
-        if (!navigator.serviceWorker) return;
-        //Register service worker after DOM content has loaded
-        window.addEventListener('load', function() {
-            /***** Switch comments in code to run page on local servel OR on github *****/
-            // navigator.serviceWorker.register('/service-worker.js', {
-            //     scope: '/'
-            navigator.serviceWorker.register('/Restaurant-Review/service-worker.js', {
-                scope: '/Restaurant-Review/'
-            }).then(function(reg) {
-                console.log("Service Worker Registered with scope: ", reg.scope);
-            }).catch(function(err) {
-                console.log("Error in Service Worker Registration: ", err);
-            });
-        });
-    }
-
+    
 
     /**
      * Database URL.
